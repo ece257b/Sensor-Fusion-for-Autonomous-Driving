@@ -7,4 +7,3 @@ Please follow the below steps:
 - Go to `lidar-radar-clip` directory to see how LiDAR and Radar based CLIP models are trained.
 
 Look at `Final_Project_Report.pdf` for more details.
-# Sensor-Fusion-for-Autonomous-Driving
