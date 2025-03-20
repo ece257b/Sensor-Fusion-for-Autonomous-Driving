@@ -6,4 +6,4 @@ Please follow the below steps:
 - Go to `data-collection` directory to see how the autopilot, caption generation and radar data generation is implemented in python.
 - Go to `lidar-radar-clip` directory to see how LiDAR and Radar based CLIP models are trained.
 
-Look at `Final_Project_Report.pdf` for more details.
+Look at [Final Project Report](https://github.com/ece257b/Sensor-Fusion-for-Autonomous-Driving/blob/main/) for more details.
