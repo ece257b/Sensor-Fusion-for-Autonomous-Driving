@@ -1,0 +1,100 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: caption-gen0
+  namespace: ecewcsng
+spec:
+  template:
+    metadata:
+      labels:
+        app: caption-gen0
+    spec:
+      containers:
+      - command:
+        - /bin/sh
+        - -c
+        - cd /radar-imaging-dataset/P2SIF/data-collection/Scripts/Caption_Scripts
+          && bash job0.sh
+        env:
+        - name: TZ
+          value: UTC
+        - name: SIZEW
+          value: '1920'
+        - name: SIZEH
+          value: '1200'
+        - name: REFRESH
+          value: '60'
+        - name: DPI
+          value: '96'
+        - name: CDEPTH
+          value: '24'
+        - name: PASSWD
+          valueFrom:
+            secretKeyRef:
+              key: my-pass
+              name: my-pass
+        - name: NOVNC_ENABLE
+          value: 'true'
+        - name: WEBRTC_ENCODER
+          value: x264enc
+        - name: WEBRTC_ENABLE_RESIZE
+          value: 'false'
+        - name: ENABLE_AUDIO
+          value: 'true'
+        - name: ENABLE_BASIC_AUTH
+          value: 'true'
+        - name: TURN_HOST
+          value: turn.nrp-nautilus.io
+        - name: TURN_PORT
+          value: '3478'
+        - name: TURN_SHARED_SECRET
+          valueFrom:
+            secretKeyRef:
+              key: turn-secret
+              name: my-pass
+        - name: TURN_PROTOCOL
+          value: udp
+        - name: TURN_TLS
+          value: 'false'
+        image: gitlab-registry.nrp-nautilus.io/wcsng/wcsng-radarimaging:58a9405d
+        name: caption-gen0
+        ports:
+        - containerPort: 8080
+          name: http
+          protocol: TCP
+        resources:
+          limits:
+            cpu: '4'
+            memory: 2Gi
+          requests:
+            cpu: '2'
+            memory: 1Gi
+        stdin: true
+        tty: true
+        volumeMounts:
+        - mountPath: /dev/shm
+          name: dshm
+        - mountPath: /radar-imaging-dataset
+          name: radar-imaging-dataset
+        - mountPath: /cache
+          name: egl-cache-vol
+      dnsConfig:
+        nameservers:
+        - 8.8.8.8
+        - 8.8.4.4
+      dnsPolicy: None
+      hostname: caption-gen0
+      restartPolicy: Never
+      tolerations:
+      - effect: NoSchedule
+        key: nautilus.io/nrp-testing
+        operator: Exists
+      volumes:
+      - emptyDir:
+          medium: Memory
+        name: dshm
+      - emptyDir: {}
+        name: egl-cache-vol
+      - name: radar-imaging-dataset
+        persistentVolumeClaim:
+          claimName: radar-imaging-dataset

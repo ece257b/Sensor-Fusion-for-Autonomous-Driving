@@ -1,0 +1,203 @@
+{
+    "scenarios": [
+        "s1",
+        "s3",
+        "s4",
+        "s7",
+        "s8",
+        "s9",
+        "s10",
+        "ll",
+        "lr",
+        "rl",
+        "rr"
+    ],
+    "s1": {
+        "towns": [
+            "Town01_Scenario1.xml",
+            "Town02_Scenario1.xml",
+            "Town03_Scenario1.xml",
+            "Town04_Scenario1.xml",
+            "Town05_Scenario1.xml",
+            "Town06_Scenario1.xml",
+            "Town07_Scenario1.xml",
+            "Town10HD_Scenario1.xml"
+        ],
+        "scenarios": [
+            "Town01_Scenario1.json",
+            "Town02_Scenario1.json",
+            "Town03_Scenario1.json",
+            "Town04_Scenario1.json",
+            "Town05_Scenario1.json",
+            "Town06_Scenario1.json",
+            "Town07_Scenario1.json",
+            "Town10HD_Scenario1.json"
+        ]
+    },
+    "s3": {
+        "towns": [
+            "Town01_Scenario3.xml",
+            "Town02_Scenario3.xml",
+            "Town03_Scenario3.xml",
+            "Town04_Scenario3.xml",
+            "Town05_Scenario3.xml",
+            "Town06_Scenario3.xml",
+            "Town07_Scenario3.xml",
+            "Town10HD_Scenario3.xml"
+        ],
+        "scenarios": [
+            "Town01_Scenario3.json",
+            "Town02_Scenario3.json",
+            "Town03_Scenario3.json",
+            "Town04_Scenario3.json",
+            "Town05_Scenario3.json",
+            "Town06_Scenario3.json",
+            "Town07_Scenario3.json",
+            "Town10HD_Scenario3.json"
+        ]
+    },
+    "s4": {
+        "towns": [
+            "Town01_Scenario4.xml",
+            "Town02_Scenario4.xml",
+            "Town03_Scenario4.xml",
+            "Town04_Scenario4.xml",
+            "Town05_Scenario4.xml",
+            "Town06_Scenario4.xml",
+            "Town07_Scenario4.xml",
+            "Town10HD_Scenario4.xml"
+        ],
+        "scenarios": [
+            "Town01_Scenario4.json",
+            "Town02_Scenario4.json",
+            "Town03_Scenario4.json",
+            "Town04_Scenario4.json",
+            "Town05_Scenario4.json",
+            "Town06_Scenario4.json",
+            "Town07_Scenario4.json",
+            "Town10HD_Scenario4.json"
+        ]
+    },
+    "s7": {
+        "towns": [
+            "Town01_Scenario7.xml",
+            "Town02_Scenario7.xml",
+            "Town03_Scenario7.xml",
+            "Town04_Scenario7.xml",
+            "Town05_Scenario7.xml",
+            "Town06_Scenario7.xml",
+            "Town07_Scenario7.xml",
+            "Town10HD_Scenario7.xml"
+        ],
+        "scenarios": [
+            "Town01_Scenario7.json",
+            "Town02_Scenario7.json",
+            "Town03_Scenario7.json",
+            "Town04_Scenario7.json",
+            "Town05_Scenario7.json",
+            "Town06_Scenario7.json",
+            "Town07_Scenario7.json",
+            "Town10HD_Scenario7.json"
+        ]
+    },
+    "s8": {
+        "towns": [
+            "Town01_Scenario8.xml",
+            "Town02_Scenario8.xml",
+            "Town03_Scenario8.xml",
+            "Town04_Scenario8.xml",
+            "Town05_Scenario8.xml",
+            "Town06_Scenario8.xml",
+            "Town07_Scenario8.xml",
+            "Town10HD_Scenario8.xml"
+        ],
+        "scenarios": [
+            "Town01_Scenario8.json",
+            "Town02_Scenario8.json",
+            "Town03_Scenario8.json",
+            "Town04_Scenario8.json",
+            "Town05_Scenario8.json",
+            "Town06_Scenario8.json",
+            "Town07_Scenario8.json",
+            "Town10HD_Scenario8.json"
+        ]
+    },
+    "s9": {
+        "towns": [
+            "Town01_Scenario9.xml",
+            "Town02_Scenario9.xml",
+            "Town03_Scenario9.xml",
+            "Town04_Scenario9.xml",
+            "Town05_Scenario9.xml",
+            "Town06_Scenario9.xml",
+            "Town07_Scenario9.xml",
+            "Town10HD_Scenario9.xml"
+        ],
+        "scenarios": [
+            "Town01_Scenario9.json",
+            "Town02_Scenario9.json",
+            "Town03_Scenario9.json",
+            "Town04_Scenario9.json",
+            "Town05_Scenario9.json",
+            "Town06_Scenario9.json",
+            "Town07_Scenario9.json",
+            "Town10HD_Scenario9.json"
+        ]
+    },
+    "s10": {
+        "towns": [
+            "Town03_Scenario10.xml",
+            "Town04_Scenario10.xml",
+            "Town05_Scenario10.xml",
+            "Town06_Scenario10.xml",
+            "Town07_Scenario10.xml",
+            "Town10HD_Scenario10.xml"
+        ],
+        "scenarios": [
+            "Town01_Scenario10.json",
+            "Town02_Scenario10.json",
+            "Town03_Scenario10.json",
+            "Town04_Scenario10.json",
+            "Town05_Scenario10.json",
+            "Town06_Scenario10.json",
+            "Town07_Scenario10.json",
+            "Town10HD_Scenario10.json"
+        ]
+    },
+    "ll": {
+        "towns": [
+            "Town04_ll.xml",
+            "Town05_ll.xml",
+            "Town06_ll.xml"
+        ],
+        "scenarios": []
+    },
+    "lr": {
+        "towns": [
+            "Town03_lr.xml",
+            "Town04_lr.xml",
+            "Town05_lr.xml",
+            "Town06_lr.xml",
+            "Town10HD_lr.xml"
+        ],
+        "scenarios": []
+    },
+    "rl": {
+        "towns": [
+            "Town03_rl.xml",
+            "Town04_rl.xml",
+            "Town05_rl.xml",
+            "Town06_rl.xml",
+            "Town10HD_rl.xml"
+        ],
+        "scenarios": []
+    },
+    "rr": {
+        "towns": [
+            "Town04_rr.xml",
+            "Town05_rr.xml",
+            "Town06_rr.xml"
+        ],
+        "scenarios": []
+    }
+}

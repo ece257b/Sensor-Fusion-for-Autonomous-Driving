@@ -1,0 +1,30 @@
+INPUT : "lidar"
+
+NOISE : True
+
+BUILDINGS : True
+RADAR_TYPE : ti_cascade
+
+INDOOR : False
+
+RADAR_MOVING : False
+
+RAY_TRACING : False
+
+INVERT_ANGLE : 0
+
+BASE_PATH : "/home/pushkalm11/radar-foundation-model/Data/CARLA/"
+
+CAMERA_PATH : "rgb/" #path for original camera images
+
+LIDAR_PATH : "lidar/" #path for unprocessed lidar point clouds
+
+LIDAR_PATH_SEGMENTED : "semantic_lidar/" #path for segmented lidar point clouds
+
+LIDAR_PATH_POINT_VELOCITY : "lidar_velocity/" #path for saving the velocity of all the points and all the frames
+
+LIDAR_PATH_CLUSTER_VELOCITY : "lidar_clusters_centroid_with_label_velocity/" #path for saving the velocity of all the cluster points and all the frames
+
+RADAR_PATH_SIMULATED : "sim_radar"
+
+CARLA_SHENRON_SEM_LIDAR : semantic_lidar/

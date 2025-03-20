@@ -1,0 +1,19 @@
+# All DS_Store files
+**/.DS_Store
+
+# Ignore all changes pycache directory
+**/__pycache__/
+*.pyc
+
+# Ignore data_gen folder
+carla_data/
+
+# Ignore logs folder
+**/logs/
+
+# Ignore all .vscode folders
+**/.vscode/
+
+# Ignore caption nad model directory
+lidar-radar-clip/caption/
+lidar-radar-clip/models/

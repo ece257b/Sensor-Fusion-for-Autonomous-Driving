@@ -1,0 +1,4 @@
+[submodule "SST"]
+	path = SST
+	url = git@github.com:TuSimple/SST.git
+	ignore = dirty
